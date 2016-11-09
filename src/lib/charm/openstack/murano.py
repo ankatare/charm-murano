@@ -97,6 +97,13 @@ def import_io_murano():
     """
     MuranoCharm.singleton.import_io_murano()
 
+def db_sync():
+    """Use the singleton from the DesignateCharm to run db migration
+
+    @returns: None
+    """
+    MuranoCharm.singleton.db_sync()
+
 
 class MuranoCharm(charms_openstack.charm.HAOpenStackCharm):
     
